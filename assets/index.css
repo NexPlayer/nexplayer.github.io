@@ -49,7 +49,7 @@ ul{
 .profile-logo {
   min-height: 80px;
   position: relative;
-  width: 61.85567%;
+  width: 100%;
   float: left;
   margin-right: 1.71821%;
   display: inline;
@@ -57,11 +57,11 @@ ul{
 
 .profile-logo-image {
   float: left;
-  height: 80px;
+  height: 100px;
   margin-bottom: .5em;
   margin-left: auto;
   margin-right: auto;
-  width: 80px;
+  width: 100px;
 }
 
 .profile-logo img {
@@ -71,30 +71,86 @@ ul{
   -o-border-radius: 5px;
   border-radius: 5px;
   display: inline-block;
-  height: 80px;
+  height: 100px;
   text-decoration: none;
   vertical-align: middle;
-  width: 80px;
+  width: 100px;
 }
 
 .profile-name {
   font-size: 2em;
-  line-height: 2.57143em;
+  line-height: 1.1em;
   box-orient: vertical;
   box-pack: center;
   display: block;
   font-weight: 300;
   min-height: 2.57143em;
-  margin-left: 98px;
+  margin-left: 130px;
   margin-top: .03571em;
+  width: 100%;
 }
 
 .profile-name h1 {
-  line-height: 0em;
+  line-height: 1.3em;
   display: inline-block;
   vertical-align: middle;
+  width: 100%;
+  margin: 0;
+  font-size: 1.2em;
+  min-height: 49px;
 }
 
+.profile-name p {
+  width: 100%;
+  text-align: left;
+  font-size: 0.4em;
+  font-weight: 100;
+  margin-top: 0;
+  line-height: 2em;
+  margin-bottom: 0;
+  color: #8b949e;
+  font-family: Segoe UI,Helvetica,Arial,sans-serif,Segoe UI Emoji;
+}
+
+.profile-name ul{
+  padding-left: 0;
+  margin-top: 0;
+  font-size: 0.4em;
+  line-height: 1.5em;
+  display: flex;
+  font-family: Segoe UI,Helvetica,Arial,sans-serif,Segoe UI Emoji;
+}
+
+.profile-name li{
+  max-width: 230px;
+  margin: 0 15px;
+  color: #a8aeb3;
+}
+
+.profile-name li a:hover{
+  color: #a8aeb3;
+}
+
+.profile-name li a:link{
+  color: #a8aeb3;
+}
+
+.profile-name li a:visited{
+  color: #a8aeb3;
+}
+
+.profile-name li a:active{
+  color: #a8aeb3;
+}
+
+.profile-name li:first-child{
+  margin-left: 0;
+}
+
+.profile-name svg {
+  transform: translate(0%, 15%);
+  fill: #a8aeb3;
+}
 .profile-summary {
   text-align: right;
   min-height: 80px;
@@ -126,10 +182,11 @@ a {
   padding-bottom: .64286em;
   text-align: center;
   border-top: solid rgba(128, 128, 128, 0.171) 1px;
+  font-family: Segoe UI,Helvetica,Arial,sans-serif,Segoe UI Emoji;
 }
 
 .profile-description p {
-  font-size: 1.3em;
+  font-size: 1.15em;
   line-height: 1.45455em;
   font-weight: 150;
   margin: 1em auto 0 auto;
@@ -270,6 +327,10 @@ a {
   .wrapper {
     height: 100%;
   }
+  .profile-name h1, p, ul{
+    max-width: 89%;
+  }
+
 }
 
 @media screen and (min-width: 48em) and (max-width: 63.9375em){
@@ -279,6 +340,14 @@ a {
     height: 100%;
   }
   
+  .profile-logo img {
+    transform: translate(0, 15%);
+  }
+
+  .profile-name p, ul, h1 {
+    max-width: 82%;
+  }
+
   .footer-navigation {
     width: 51.42857em;
   }
@@ -289,6 +358,26 @@ a {
     max-width: 572px;
   }
 
+  .profile-name p, ul, h1 {
+    max-width: 77%;
+  }
+
+  .profile-logo img {
+    transform: translate(0, 10%);
+  }
+  
+  .profile-name p {
+    font-size: 0.35em;
+  }
+
+  .profile-name ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 0.3em;
+  }
+  .profile-name ul li:nth-child(3){
+    margin-left: 0;
+  }
   .menu-category-list {
     list-style: none;
     width: 100%;
@@ -315,6 +404,14 @@ a {
 
   .profile-name h1 {
     width: 100%;
+    text-align: center;
+  }
+
+  .profile-name p {
+    text-align: center;
+  }
+  
+  .profile-name ul {
     text-align: center;
   }
 
@@ -359,6 +456,15 @@ a {
   .profile-name h1 {
     width: 100%;
     text-align: center;
+  }
+
+  .profile-name p {
+    text-align: center;
+  }
+
+  .profile-name ul {
+    flex-direction: column;
+    align-items: center;
   }
 
   .profile-description p {
