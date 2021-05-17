@@ -327,7 +327,13 @@ a {
   .wrapper {
     height: 100%;
   }
-  .profile-name h1, p, ul{
+  .profile-name h1{
+    max-width: 89%;
+  }
+  .profile-name p{
+    max-width: 89%;
+  }
+  .profile-name ul{
     max-width: 89%;
   }
 
@@ -344,7 +350,15 @@ a {
     transform: translate(0, 15%);
   }
 
-  .profile-name p, ul, h1 {
+  .profile-name h1 {
+    max-width: 82%;
+  }
+
+  .profile-name p {
+    max-width: 82%;
+  }
+  
+  .profile-name ul {
     max-width: 82%;
   }
 
@@ -358,7 +372,15 @@ a {
     max-width: 572px;
   }
 
-  .profile-name p, ul, h1 {
+  .profile-name  h1 {
+    max-width: 77%;
+  }
+
+  .profile-name p{
+    max-width: 77%;
+  }
+
+  .profile-name ul{
     max-width: 77%;
   }
 
