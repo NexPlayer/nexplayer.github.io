@@ -264,11 +264,16 @@ a {
   transition: opacity .3 ease;
 }
 
+#tizen{
+  font-size: .8em;
+}
+
 .menu-item-image a{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 36vh;
+  height: 80%;
+  width: 100%;
 }
 
 .menu-item-image img{
@@ -350,9 +355,6 @@ a {
 }
 
 @media screen and (min-width: 63.9375em) {
-  .wrapper {
-    height: auto;
-  }
 
   .profile-name{
     max-width: 88%;
@@ -370,8 +372,8 @@ a {
     max-width: 89%;
   }
 
-  .menu-item-image a {
-    height: 24vh;
+  #tizen{
+    font-size: 1em;
   }
 
   .footer-navigation {
@@ -384,7 +386,6 @@ a {
   
   .wrapper {
     max-width: 720px;
-    height: auto;
   }
 
   .profile-masthead {
@@ -420,10 +421,6 @@ a {
 
   .menu-item{
     height: 11em;
-  }
-
-  .menu-item-image a{
-    height: 21vh;
   }
 
   .footer-navigation {
@@ -485,10 +482,6 @@ a {
     height: 13em;
   }
 
-  .menu-item-image a{
-    height: 24vh;
-  }
-
   .footer-navigation {
     width: 40.85714em;
   }
@@ -543,10 +536,6 @@ a {
     height: 14em;
   }
 
-  .menu-item-image a{
-    height: 28vh;
-  }
-
   .footer-navigation {
     width: 30.35714em;
   }
@@ -555,6 +544,7 @@ a {
 @media only screen and (max-width: 29.9375em){
   .wrapper {
     max-width: 276px;
+    height: auto;
   }
 
   .profile-name {
@@ -599,10 +589,6 @@ a {
     max-height: 198px;
   }
 
-  .menu-item-image a{
-    height: 25vh;
-  }
-
   .menu-category {
     padding-top: 0;
   }
@@ -619,5 +605,11 @@ a {
 
   .footer-navigation {
     width: 19.78571em;
+  }
+}
+
+@media only screen and (min-height: 1127px) and (min-width:  48em){
+  .wrapper{
+    height: 100vh;
   }
 }
